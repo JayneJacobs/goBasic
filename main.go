@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"time"
-)
+import "goBasic/arrays"
 
 func main() {
 	// variatics.Ve("abc", "jayne", "jim")
@@ -11,63 +8,28 @@ func main() {
 	// variatics.VindNstring(1, "hi")
 	// variatics.VariInterf(1, "abbc", true, 12.12, []string{"123","xxx", "Jayne"})
 	// PanicEx()
-
-	defer fmt.Println("This is in main, it is defered")
-	// x:= "abc"
-	// PanicDefer(&x,nil)
-	PanicFirst()
-	fmt.Println("Back in Main funciton after panic which does not happen if panic runs")
-	
-}
-// PanicEx print statemens and show Panic also User Input Example
-func PanicEx()  {
-	var a int
-	fmt.Println("enter1 for amatuer 2 for expert: ")
-	fmt.Scanln(&a)
-	switch a {
-	case 1:
-		fmt.Println("Amateur")
-	case 2:
-		fmt.Println("Expert")
-	default:
-		panic(fmt.Sprintf("Entered something incorrectly %d", a))
-	}
-   fmt.Println("Back in main This wont print if Panic runs")
-  
-}
-
-// PanicDefer demonstrates a panic in an if statement// pointer to a string
-func PanicDefer (x *string, y *string) {
-	defer RecoverPanic()
-	defer fmt.Println("\nThis will print if Panic runs, it is defered")
-	
-	if x == nil {
-		panic("\nruntime err: x is nil")
-	}
-	if y ==nil {
-		panic("\nruntime err: y is nil")
-	}
-	fmt.Printf("\nThis is x: %s \n This is y %s", *x,*y)
+	// n := 1
+	// prime := prime.IsPrime(n)
+	// fmt.Println(prime)
+	// prime2 := prime.PrimeCk(n)
+	// fmt.Println(prime2)
+	// defer fmt.Println("This is in main, it is defered")
+	// // x:= "abc"
+	// // PanicDefer(&x,nil)
+	// panics.PanicFirst()
+	// fmt.Println("Back in Main funciton after panic which does not happen if panic runs")
+	// var a [4]int
+	// arrays.PrintArray(a)
+	// arrays.AssignRow(a)
+	// arrays.Findlen()
+	// arrays.AssignmentCopy()
+	// num := [...]int{01,856,275,3638}
+	// arrays.PassCopy(num)
+	// fmt.Println("This is num array after passing it by value(copy), still unchanged: ", num)
+	// arrays.ForArray(num)
+	// arrays.RangeArray(num)
+	// arrays.Threeby2()
+	// arrays.Threeby2NestedFor()
+	arrays.NestedForArray()
 }
 
-// RecoverPanic allows to panic from a function and return to another function
-func RecoverPanic()  {
-	if r := recover(); r != nil {
-		fmt.Println("\nrecovered from: ", r)
-	}
-}
-// PanicFirst calls recoverPanic and runs PanicSecond as a go routine since panic happens in PanicSecond it will not recover
-func PanicFirst() {
-	defer RecoverPanic()
-	fmt.Println("in PanicFirst")
-	// go PanicSecond() 
-	//removing go from PanicSecond allows recovery
-	PanicSecond()
-    time.Sleep(1 * time.Second)
-
-}
-
-func PanicSecond(){
-	fmt.Println("in PanicSecond")
-	panic("Panicking in Panic second")
-}
