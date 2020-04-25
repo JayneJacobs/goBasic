@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// variatics.Ve("abc", "jayne", "jim")
 	// variatics.Vn()
@@ -73,7 +71,7 @@ func main() {
 	// 	a, b := maps.AssignKey(x, key)
 	// 	fmt.Println( a, b)
 	// 	exist, key, val := maps.CheckMapKey(x,key)
-	// fmt.Printf("/This key: %v exists: %v: it is %v ", key, exist, val)
+	// fmt.Printf("/This key: %v exists:: %v it is %v ", key, exist, val)
 	// x := make( map[string]string)
 	//     key1 := "Jayne"
 	// 	x[key1] = "Flute"
@@ -81,9 +79,9 @@ func main() {
 	// 	x["Rich"] = "Guitar"
 	//     key2 := "new"
 	// 	ok, val :=  maps.CkPStringforKey(x, key1)
-	// 	fmt.Printf("\nThis value %v, for thi key: %v: %v\n",val, key1, ok)
+	// 	fmt.Printf("\nThis value %v, for thi key:: %v %v\n",val, key1, ok)
 	// 	ok, val =  maps.CkPStringforKey(x, key2)
-	// 	fmt.Printf("\nThis value %v, for this key: %v: is it there? %v \n",val, key2, ok)
+	// 	fmt.Printf("\nThis value %v, for this key:: %v is it there? %v \n",val, key2, ok)
 	// x := make( map[string]string)
 	//     key1 := "Jayne"
 	// 	x[key1] = "Flute"
@@ -91,9 +89,9 @@ func main() {
 	// 	x["Rich"] = "Guitar"
 	//     key2 := "new"
 	// 	y,ok, val :=  maps.DeleteKey(x, key1)
-	// 	fmt.Printf("\nThis value %v, for thi key: %v: %v\n",val, key1, ok)
+	// 	fmt.Printf("\nThis value %v, for thi key:: %v %v\n",val, key1, ok)
 	// 	y,ok, val =  maps.DeleteKey(x, key2)
-	// 	fmt.Printf("\nThis value %v, for this key: %v: is it there? %v \n",val, key2, ok)
+	// 	fmt.Printf("\nThis value %v, for this key:: %v is it there? %v \n",val, key2, ok)
 	// 	fmt.Printf("This is the new map: %v",y)
 //Maps with strings
 	// strings.StringMaps()
@@ -109,25 +107,11 @@ func main() {
 //Pointers
 	// b := 100
 	// a := &b
-	// an := PointerDemo(a, b)//A is the address of b 
-	// fmt.Printf("\nThis is now the address of a: %v, \t new value of b: %v ", an, b)
-	// an = PointerDemo(&b, b) //&b is also the address of b. 
-	// fmt.Printf("\nThis is now the address of a: %v, \t new value of b: %v ", an, b)
+	// an := pointerefs.PointerDemo(a, b)//A is the address of b 
+	// fmt.Printf("\nThis is now the address of a: %v, \t new value of b: %v \n", an, b)
+	// an = pointref.PointerDemo(&b, b) //&b is also the address of b. 
+	// fmt.Printf("\nThis is now the address of a: %v, \t new value of b: %v \n", an, b)
+//Array Manipulation with pointers
+	pointref.PointerArrayDemo()
+
 } 
-
-PointArray(){
-
-}
-
-// PointerDemo shows use of &Address of var *Reference to value at address
-func PointerDemo(a *int, b int) *int{
-
-fmt.Printf("\nThis is the address of reference to a %v: ", a)
-fmt.Printf("\nThis is the address of b %v: ", &b)
-b = b + 100 //has no effect on the orginal value of b in main
-fmt.Printf("\nThis is the Type of a %T: ", a)
-fmt.Printf("\nThis is the dereference  value stored at the address of *a %d: ", *a )
-*a = *a +100
-return a
-
-}
