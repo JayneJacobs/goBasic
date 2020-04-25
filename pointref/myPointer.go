@@ -1,5 +1,7 @@
 packge pointref
-
+imports(
+   "fmt"
+)
 //A pointer stores the memory location of a variable.  
 
 // PointerArrayDemo of passing by pointer changing original value in another function

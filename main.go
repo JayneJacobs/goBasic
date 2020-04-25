@@ -1,5 +1,7 @@
 package main
-
+import {
+	"goBasic/pointref"
+}
 func main() {
 	// variatics.Ve("abc", "jayne", "jim")
 	// variatics.Vn()
@@ -112,6 +114,6 @@ func main() {
 	// an = pointref.PointerDemo(&b, b) //&b is also the address of b. 
 	// fmt.Printf("\nThis is now the address of a: %v, \t new value of b: %v \n", an, b)
 //Array Manipulation with pointers
-	pointref.PointerArrayDemo()
+	pointref.PointerDemo()
 
 } 
