@@ -46,77 +46,77 @@ func main() {
 	// a := []int{1,2,3}
 	// fmt.Println(a)
 	// a = slices.Funk(a)
-//MultiDimentional slices need commas after each line
-//     a := [][]string {
-// 		{"Jayne","Jim"},
-// 		{"Scott", "Rich", "Elvis"},
-// 	}
-//    slices.MultDimSlice(a)
+// MultiDimentional slices need commas after each line
+	//     a := [][]string {
+	// 		{"Jayne","Jim"},
+	// 		{"Scott", "Rich", "Elvis"},
+	// 	}
+	//    slices.MultDimSlice(a)
 //maps 
 	// x := make(map[string]int) 
-// var x map[string]int
+	// var x map[string]int
 // UseMaps returns a string
-// 	  mys, myy := maps.UseMaps(x)
-// 	  fmt.Printf("\nBefore assign: \n %v ",mys)
+	// 	  mys, myy := maps.UseMaps(x)
+	// 	  fmt.Printf("\nBefore assign: \n %v ",mys)
 
-// 	  mys, myy  = maps.UseMaps(x)
-// 	  fmt.Printf("\nAfter assign: \n %v   ",myy) // need the make funciton for x
+	// 	  mys, myy  = maps.UseMaps(x)
+	// 	  fmt.Printf("\nAfter assign: \n %v   ",myy) // need the make funciton for x
 // // Assignement
-// 	x, j := maps.MakeAssignMap()
-// 	fmt.Println(x["Jayne"])
-// 	x["Jayne"] = 5
-// 	x["Jim"] = 2
-// 	x["Rich"] = 3
-// 	fmt.Println( j, x["Rich"], x["Jayne"])
+	// 	x, j := maps.MakeAssignMap()
+	// 	fmt.Println(x["Jayne"])
+	// 	x["Jayne"] = 5
+	// 	x["Jim"] = 2
+	// 	x["Rich"] = 3
+	// 	fmt.Println( j, x["Rich"], x["Jayne"])
 // //Assign Key for Maps
-// 	key := "New"
-// 	a, b := maps.AssignKey(x, key)
-// 	fmt.Println( a, b)
-// 	exist, key, val := maps.CheckMapKey(x,key)
-// fmt.Printf("/This key: %v exists: %v: it is %v ", key, exist, val)
-// x := make( map[string]string)
-//     key1 := "Jayne"
-// 	x[key1] = "Flute"
-// 	x["Jim"] = "Bass"
-// 	x["Rich"] = "Guitar"
-//     key2 := "new"
-// 	ok, val :=  maps.CkPStringforKey(x, key1)
-// 	fmt.Printf("\nThis value %v, for thi key: %v: %v\n",val, key1, ok)
-// 	ok, val =  maps.CkPStringforKey(x, key2)
-// 	fmt.Printf("\nThis value %v, for this key: %v: is it there? %v \n",val, key2, ok)
-// x := make( map[string]string)
-//     key1 := "Jayne"
-// 	x[key1] = "Flute"
-// 	x["Jim"] = "Bass"
-// 	x["Rich"] = "Guitar"
-//     key2 := "new"
-// 	y,ok, val :=  maps.DeleteKey(x, key1)
-// 	fmt.Printf("\nThis value %v, for thi key: %v: %v\n",val, key1, ok)
-// 	y,ok, val =  maps.DeleteKey(x, key2)
-// 	fmt.Printf("\nThis value %v, for this key: %v: is it there? %v \n",val, key2, ok)
-// 	fmt.Printf("This is the new map: %v",y)
+	// 	key := "New"
+	// 	a, b := maps.AssignKey(x, key)
+	// 	fmt.Println( a, b)
+	// 	exist, key, val := maps.CheckMapKey(x,key)
+	// fmt.Printf("/This key: %v exists: %v: it is %v ", key, exist, val)
+	// x := make( map[string]string)
+	//     key1 := "Jayne"
+	// 	x[key1] = "Flute"
+	// 	x["Jim"] = "Bass"
+	// 	x["Rich"] = "Guitar"
+	//     key2 := "new"
+	// 	ok, val :=  maps.CkPStringforKey(x, key1)
+	// 	fmt.Printf("\nThis value %v, for thi key: %v: %v\n",val, key1, ok)
+	// 	ok, val =  maps.CkPStringforKey(x, key2)
+	// 	fmt.Printf("\nThis value %v, for this key: %v: is it there? %v \n",val, key2, ok)
+	// x := make( map[string]string)
+	//     key1 := "Jayne"
+	// 	x[key1] = "Flute"
+	// 	x["Jim"] = "Bass"
+	// 	x["Rich"] = "Guitar"
+	//     key2 := "new"
+	// 	y,ok, val :=  maps.DeleteKey(x, key1)
+	// 	fmt.Printf("\nThis value %v, for thi key: %v: %v\n",val, key1, ok)
+	// 	y,ok, val =  maps.DeleteKey(x, key2)
+	// 	fmt.Printf("\nThis value %v, for this key: %v: is it there? %v \n",val, key2, ok)
+	// 	fmt.Printf("This is the new map: %v",y)
 //Maps with strings
 	// strings.StringMaps()
 	// ru := []rune{0x0053, 0x0065, 0x00f1}
 	// x := []byte{0x54, 0x61}
 	// strings.RunCountDemo(ru, x)
 // Are strings immutable
-// x := "hihello"
-// 	// err := strings.CantImmuteStrings(x)
-// 	// fmt.Println(err)
-// 	err := strings.CanImmuteRunes([]rune(x))
-// 	fmt.Println(err)
+	// x := "hihello"
+	// 	// err := strings.CantImmuteStrings(x)
+	// 	// fmt.Println(err)
+	// 	err := strings.CanImmuteRunes([]rune(x))
+	// 	fmt.Println(err)
 //Pointers
-// b := 100
-// a := &b
-// an := PointerDemo(a, b)//A is the address of b 
-// fmt.Printf("\nThis is now the address of a: %v, \t new value of b: %v ", an, b)
-// an = PointerDemo(&b, b) //&b is also the address of b. 
-// fmt.Printf("\nThis is now the address of a: %v, \t new value of b: %v ", an, b)
+	// b := 100
+	// a := &b
+	// an := PointerDemo(a, b)//A is the address of b 
+	// fmt.Printf("\nThis is now the address of a: %v, \t new value of b: %v ", an, b)
+	// an = PointerDemo(&b, b) //&b is also the address of b. 
+	// fmt.Printf("\nThis is now the address of a: %v, \t new value of b: %v ", an, b)
 } 
 
 PointArray(){
-	
+
 }
 
 // PointerDemo shows use of &Address of var *Reference to value at address
