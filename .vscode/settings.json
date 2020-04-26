@@ -1,0 +1,10 @@
+{
+    "npm.packageManager": "yarn",
+    "npm.useRootDirectory": false,
+    "eslint.packageManager": "yarn",
+    "prettier.packageManager": "yarn",
+    "typescript.preferences.renameShorthandProperties": false,
+    "typescript.suggestionActions.enabled": false,
+    "typescript.suggest.autoImports": false,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false
+}

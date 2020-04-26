@@ -1,7 +1,7 @@
-packge pointref
-imports(
-   "fmt"
-)
+package pointref
+
+import "fmt"
+
 //A pointer stores the memory location of a variable.  
 
 // PointerArrayDemo of passing by pointer changing original value in another function
@@ -31,14 +31,14 @@ return *a3
 }
 
 // PointerDemo shows use of &Address of var *Reference to value at address
-// func Pointer(a *int, b int) *int{
+func PointerDemo(a *int, b int) *int{
 
-// fmt.Printf("\nThis is the address of reference to a: %v \n", a)
-// fmt.Printf("\nThis is the address of b: %v \n", &b)
-// b = b + 100 //has no effect on the orginal value of b in main
-// fmt.Printf("\nThis is the Type of a %T: ", a)
-// fmt.Printf("\nThis is the dereference  value stored at the address of *a %d: ", *a )
-// *a = *a +100
-// return a
+fmt.Printf("\nThis is the address of reference to a: %v \n", a)
+fmt.Printf("\nThis is the address of b: %v \n", &b)
+b = b + 100 //has no effect on the orginal value of b in main
+fmt.Printf("\nThis is the Type of a %T: ", a)
+fmt.Printf("\nThis is the dereference  value stored at the address of *a %d: ", *a )
+*a = *a +100
+return a
 
 }

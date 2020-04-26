@@ -1,0 +1,72 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"npm.fetchOnlinePackageInfo": false,
+		"npm-intellisense.recursivePackageJsonLookup": false,
+		"npm.useRootDirectory": false,
+		"tslint.packageManager": "yarn",
+		"debug.toolBarLocation": "hidden",
+		"debug.openDebug": "neverOpen",
+		"typescript.tsserver.useSeparateSyntaxServer": false,
+		"angular.log": "off",
+		"debug.node.showUseWslIsDeprecatedignore": false,
+		"typescript.suggestionActions.enabled": false,
+		"typescript.format.enable": false,
+		"typescript.surveys.enabled": false,
+		"typescript.suggest.includeAutomaticOptionalChainCompletions": false,
+		"typescript.autoClosingTags": false,
+		"css.completion.completePropertyWithSemicolon": false,
+		"css.lint.argumentsInColorFunction": "ignore",
+		"css.lint.hexColorLength": "ignore",
+		"css.lint.propertyIgnoredDueToDisplay": "ignore",
+		"css.lint.unknownProperties": "ignore",
+		"css.validate": false,
+		"scss.completion.completePropertyWithSemicolon": false,
+		"scss.lint.argumentsInColorFunction": "ignore",
+		"scss.lint.emptyRules": "ignore",
+		"css.completion.triggerPropertyValueCompletion": false,
+		"prettier.htmlWhitespaceSensitivity": "ignore",
+		"scss.completion.triggerPropertyValueCompletion": false,
+		"scss.validate": false,
+		"scss.lint.vendorPrefix": "ignore",
+		"scss.lint.unknownProperties": "ignore",
+		"html.validate.styles": false,
+		"json.trace.server": "messages",
+		"less.completion.completePropertyWithSemicolon": false,
+		"less.completion.triggerPropertyValueCompletion": false,
+		"less.lint.hexColorLength": "ignore",
+		"less.lint.argumentsInColorFunction": "ignore",
+		"go.useLanguageServer": true,
+		"go.formatTool": "goimports",
+		"[go]": {
+			"editor.formatOnSave": true,
+			"editor.codeActionsOnSave": {
+				"source.organizeImports": true,
+			},
+			// Optional: Disable snippets, as they conflict with completion ranking.
+			"editor.snippetSuggestions": "none",
+		},
+		"[go.mod]": {
+			"editor.formatOnSave": true,
+			"editor.codeActionsOnSave": {
+				"source.organizeImports": true,
+			},
+		},
+		"gopls": {
+			// Add parameter placeholders when completing a function.
+		   "usePlaceholders": true,
+	   
+		   // If true, enable additional analyses with staticcheck.
+		   // Warning: This will significantly increase memory usage.
+		   "staticcheck": false,
+	},
+	"go.autocompleteUnimportedPackages": true
+	},
+	"go.alternateTools": {},
+	"go.liveErrors": {}
+
+}

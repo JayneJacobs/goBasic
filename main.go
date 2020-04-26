@@ -1,26 +1,26 @@
 package main
-import {
-	"goBasic/pointref"
-}
+
+import "fmt"
+
 func main() {
 	// variatics.Ve("abc", "jayne", "jim")
 	// variatics.Vn()
 	// variatics.VindNstring(1, "hi")
 	// variatics.VariInterf(1, "abbc", true, 12.12, []string{"123","xxx", "Jayne"})
-// PanicEx()
+	// PanicEx()
 	// n := 1
-	// prime := prime.IsPrime(n)
+	// prime := primes.IsPrime(n)
 	// fmt.Println(prime)
-	// prime2 := prime.PrimeCk(n)
+	// prime2 := primes.IsPrimeCk(n)
 	// fmt.Println(prime2)
-//Panic Part1
+	//Panic Part1
 	// defer fmt.Println("This is in main, it is defered")
 	// // x:= "abc"
 	// // PanicDefer(&x,nil)
 	// panics.PanicFirst()
 	// fmt.Println("Back in Main funciton after panic which does not happen if panic runs")
 	// var a [4]int
-//Slices
+	//Slices
 	// arrays.PrintArray(a)
 	// arrays.AssignRow(a)
 	// arrays.Findlen()
@@ -33,7 +33,7 @@ func main() {
 	// arrays.Threeby2()
 	// arrays.Threeby2NestedFor()
 	// arrays.NestedForArray()
-// Slices
+	// Slices
 	// slices.AssigntoSlice(num)
 	// slices.ModifSlice(num)
 	// slices.ModifyCapSlice(num)
@@ -46,29 +46,29 @@ func main() {
 	// a := []int{1,2,3}
 	// fmt.Println(a)
 	// a = slices.Funk(a)
-// MultiDimentional slices need commas after each line
+	// MultiDimentional slices need commas after each line
 	//     a := [][]string {
 	// 		{"Jayne","Jim"},
 	// 		{"Scott", "Rich", "Elvis"},
 	// 	}
 	//    slices.MultDimSlice(a)
-//maps 
-	// x := make(map[string]int) 
+	//maps
+	// x := make(map[string]int)
 	// var x map[string]int
-// UseMaps returns a string
+	// UseMaps returns a string
 	// 	  mys, myy := maps.UseMaps(x)
 	// 	  fmt.Printf("\nBefore assign: \n %v ",mys)
 
 	// 	  mys, myy  = maps.UseMaps(x)
 	// 	  fmt.Printf("\nAfter assign: \n %v   ",myy) // need the make funciton for x
-// // Assignement
+	// // Assignement
 	// 	x, j := maps.MakeAssignMap()
 	// 	fmt.Println(x["Jayne"])
 	// 	x["Jayne"] = 5
 	// 	x["Jim"] = 2
 	// 	x["Rich"] = 3
 	// 	fmt.Println( j, x["Rich"], x["Jayne"])
-// //Assign Key for Maps
+	// //Assign Key for Maps
 	// 	key := "New"
 	// 	a, b := maps.AssignKey(x, key)
 	// 	fmt.Println( a, b)
@@ -95,25 +95,26 @@ func main() {
 	// 	y,ok, val =  maps.DeleteKey(x, key2)
 	// 	fmt.Printf("\nThis value %v, for this key:: %v is it there? %v \n",val, key2, ok)
 	// 	fmt.Printf("This is the new map: %v",y)
-//Maps with strings
+	//Maps with strings
 	// strings.StringMaps()
 	// ru := []rune{0x0053, 0x0065, 0x00f1}
 	// x := []byte{0x54, 0x61}
 	// strings.RunCountDemo(ru, x)
-// Are strings immutable
+	// Are strings immutable
 	// x := "hihello"
 	// 	// err := strings.CantImmuteStrings(x)
 	// 	// fmt.Println(err)
 	// 	err := strings.CanImmuteRunes([]rune(x))
 	// 	fmt.Println(err)
-//Pointers
+	//Pointers
 	// b := 100
 	// a := &b
-	// an := pointerefs.PointerDemo(a, b)//A is the address of b 
+	// an := pointref.PointerDemo(a, b)//A is the address of b
 	// fmt.Printf("\nThis is now the address of a: %v, \t new value of b: %v \n", an, b)
-	// an = pointref.PointerDemo(&b, b) //&b is also the address of b. 
+	// an = pointref.PointerDemo(&b, b) //&b is also the address of b.
 	// fmt.Printf("\nThis is now the address of a: %v, \t new value of b: %v \n", an, b)
-//Array Manipulation with pointers
-	pointref.PointerDemo()
-
-} 
+	//Array Manipulation with pointers
+	// pointref.PointerArrayDemo()
+	//Structs
+	fmt.Println("")
+}
