@@ -1,5 +1,9 @@
 package main
 
+import (
+	"goBasic/structs"
+)
+
 func main() {
 	// variatics.Ve("abc", "jayne", "jim")
 	// variatics.Vn()
