@@ -123,10 +123,23 @@ func main() {
 	// fmt.Println("")
 	// StructDemo()
 	structs.RefStructDemo()
-
+	DemoPromoted()
 }
-func () {
-	
+func DemoPromoted() {
+	var y Instruments
+	y.Person1.Instrument = "Flute"
+	y.Person1.Name = "Jayne"
+	fmt.Printf("This is the Instrument description: %v", y)
+
+	var z Bands
+	First := z.Band1.Person1
+	z.Gig = "Philadelphia"s
+	fmt.Printf("This is Band 1 : \n\t%v Gig: \n\t %v", First, z.Gig)
+
+	var p Anonymous
+	p.int = 1
+	p.string = "Jayne"
+	fmt.Println("This is the promoted fields: \nAnonymous: %v", p)
 }
 //Anonymous fields struct
 type Anonymous struct {
