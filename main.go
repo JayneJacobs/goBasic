@@ -1,7 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"goBasic/structs"
+	"time"
 )
 
 func main() {
@@ -122,4 +124,34 @@ func main() {
 	// StructDemo()
 	structs.RefStructDemo()
 
+}
+func () {
+	
+}
+//Anonymous fields struct
+type Anonymous struct {
+	int
+	string
+}
+
+// BandMembers Name string and Position int
+type BandMembers struct {
+	Name       string
+	Position   int
+	Instrument string
+}
+
+// Instruments is a struct describing a Band
+type Instruments struct {
+	Person1  BandMembers
+	Person2  BandMembers
+	Person3  BandMembers
+	Location string
+	GigDate  time.Weekday
+}
+
+// Bands describes a group of bands at a gig location
+type Bands struct {
+	Band1 Instruments
+	Gig   string
 }

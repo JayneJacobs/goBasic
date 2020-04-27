@@ -4,7 +4,8 @@ import "fmt"
 
 // RefStructDemon
 func RefStructDemo() {
-	x := &Band{"Jayne", "Flute", 1} //Needs all three values
+	X := &Band{"Jayne", "Flute", 1} //Needs all three values
+	x := X
 	fmt.Printf("Name: %v\n", x.Name)
 	fmt.Printf("Name: address: %p, value: %v", &(x).Name, (*x).Name)
 
