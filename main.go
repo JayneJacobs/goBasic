@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// variatics.Ve("abc", "jayne", "jim")
 	// variatics.Vn()
@@ -116,5 +114,8 @@ func main() {
 	//Array Manipulation with pointers
 	// pointref.PointerArrayDemo()
 	//Structs
-	fmt.Println("")
+	// fmt.Println("")
+	// StructDemo()
+	structs.RefStructDemo()
+
 }
