@@ -2,7 +2,7 @@ package structs
 
 import "fmt"
 
-// RefStructDemon
+// RefStructDemo runs the demo
 func RefStructDemo() {
 	X := &Band{"Jayne", "Flute", 1} //Needs all three values
 	x := X
