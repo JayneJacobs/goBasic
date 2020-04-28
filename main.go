@@ -1,9 +1,6 @@
 package main
 
-import (
-	"goBasic/methods"
-	"goBasic/structs"
-)
+import "goBasic/methods"
 
 func main() {
 	// variatics.Ve("abc", "jayne", "jim")
@@ -123,7 +120,8 @@ func main() {
 	// StructDemo()
 	// structs.RefStructDemo()
 	// structs.DemoPromoted()
-	structs.CompareStruct()
-	structs.Comparemap()
-	methods.Placeholder()
+	// structs.CompareStruct()
+	// structs.Comparemap()
+	// methods.Placeholder()
+	methods.UseBandX()
 }
