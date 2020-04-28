@@ -1,6 +1,7 @@
 package main
 
 import (
+	"goBasic/methods"
 	"goBasic/structs"
 )
 
@@ -124,4 +125,5 @@ func main() {
 	// structs.DemoPromoted()
 	structs.CompareStruct()
 	structs.Comparemap()
+	methods.Placeholder()
 }
