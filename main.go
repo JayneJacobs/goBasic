@@ -123,5 +123,6 @@ func main() {
 	// structs.CompareStruct()
 	// structs.Comparemap()
 	// methods.Placeholder()
-	methods.UseBandX()
+	// methods.UseBandX()
+	methods.AssignBandmembers()
 }
