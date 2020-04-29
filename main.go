@@ -1,7 +1,5 @@
 package main
 
-import "goBasic/methods"
-
 func main() {
 	// variatics.Ve("abc", "jayne", "jim")
 	// variatics.Vn()
@@ -125,5 +123,6 @@ func main() {
 	// methods.Placeholder()
 	// methods.UseBandX()
 	// methods.AssignBandmembers()
-	methods.DemoMethodvsFuction()
+	// methods.DemoMethodvsFuction()
+
 }
