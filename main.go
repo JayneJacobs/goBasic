@@ -1,5 +1,7 @@
 package main
 
+import "goBasic/interfaces"
+
 func main() {
 	// variatics.Ve("abc", "jayne", "jim")
 	// variatics.Vn()
@@ -124,5 +126,5 @@ func main() {
 	// methods.UseBandX()
 	// methods.AssignBandmembers()
 	// methods.DemoMethodvsFuction()
-
+	interfaces.InterfacesDemo()
 }
