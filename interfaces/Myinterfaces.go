@@ -2,15 +2,16 @@ package interfaces
 
 import "fmt"
 
-// StringInterface is also an interface
+// StrInterface is also an interface
 type StrInterface interface {
-	myfunc() []rune
+	Myfunc() []rune
 }
 
 // StringInterface is a string type
 type StringInterface string
 
-func (str StrInterface) Myfunc() []rune {
+// Myfunc is a Ingerface
+func (str StringInterface) Myfunc() []rune {
 
 	var myRune []rune
 	for _, ru := range str {
@@ -21,9 +22,11 @@ func (str StrInterface) Myfunc() []rune {
 	return myRune
 }
 
-func InterfacesDemo() {
+// Demo uses a String type and Interface with related methods.
+func Demo() {
 	stringInterface := StringInterface("abcdefghi")
 	var newStringInterface StrInterface
+	newStringInterface = stringInterface
 	myRune := newStringInterface.Myfunc()
-	fmt.Printf("This is the rune :%v \n This is the string: %v \n", a ...interface{})
+	fmt.Printf("This is the rune ASCII value of the vowels :%v \n This is the string: %v \n", myRune, stringInterface)
 }
