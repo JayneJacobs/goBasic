@@ -4,6 +4,7 @@ go 1.12
 
 require (
 	9fans.net/go v0.0.2 // indirect
+	github.com/dgraph-io/badger v1.6.1 // indirect
 	github.com/lukehoban/go-outline v0.0.0-20161011150102-e78556874252 // indirect
 	github.com/mdempsky/gocode v0.0.0-20200405233807-4acdcbdea79d // indirect
 	github.com/newhook/go-symbols v0.0.0-20151212134530-b75dfefa0d23 // indirect

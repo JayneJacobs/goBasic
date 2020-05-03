@@ -154,5 +154,6 @@ func main() {
 	// go channels.InChannel(xa)
 	// fmt.Println(<-xa)
 	// channels.CloseChannel()
-	channels.RangeChannel()
+	// channels.RangeChannel()
+	channels.RunBufferedMain()
 }
