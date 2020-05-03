@@ -1,6 +1,8 @@
 package main
 
-import "goBasic/interfaces"
+import (
+	"goBasic/channels"
+)
 
 func main() {
 	// variatics.Ve("abc", "jayne", "jim")
@@ -126,6 +128,7 @@ func main() {
 	// methods.UseBandX()
 	// methods.AssignBandmembers()
 	// methods.DemoMethodvsFuction()
+	//Interaces
 	// interfaces.Demo()
 	// interfaces.DemoBandInterface()
 	// interfaces.ImplementCar()
@@ -134,5 +137,22 @@ func main() {
 	// interfaces.DemoUnderlyingType()
 	// interfaces.ExSimpleEmptyIntf()
 	// interfaces.DemoTSwitch()
-	interfaces.UseTypeBandMember()
+	// interfaces.UseTypeBandMember()
+	// interfaces.DemoPointerReceiver()
+	// interfaces.DemoMultipleInterfaces()
+	//Concurrency
+	// go concurrency.RoutineOne()
+
+	// fmt.Println("This is after teh Go Routine, Main Exits before runing the go routine\n")
+	// concurrency.DemoAddTiming()
+	// concurrency.DemoAddMoreTiming()
+	// channels.RunGoRoutines()
+	// channels.MainLike()
+	// time.Sleep(5 * time.Second)
+	// channels.RunMainLike()
+	// xa := make(chan int) //chan<-int not right for one way
+	// go channels.InChannel(xa)
+	// fmt.Println(<-xa)
+	// channels.CloseChannel()
+	channels.RangeChannel()
 }
