@@ -1,7 +1,7 @@
 package main
 
 import (
-	"goBasic/channels"
+	"goBasic/panicrecover"
 )
 
 func main() {
@@ -155,5 +155,25 @@ func main() {
 	// fmt.Println(<-xa)
 	// channels.CloseChannel()
 	// channels.RangeChannel()
-	channels.RunBufferedMain()
+	// channels.RunBufferedMain()
+	// channels.BeyondCapacity()
+	// channels.BeyondLength()
+	// channels.RunWaitGroup()
+	// chanselect.RunChannelSelect()
+	// chanselect.RunforSelect()
+	// chanselect.RunOnlyDefault()
+	// chanselect.TwoCasesWDefault()
+	// chanselect.EmptySelect()// Will panic
+	// defering.Rundeferring()
+	// defering.RundeferedMethod()
+	// defering.RunDeferedMethod()
+	// defering.RunLIFOorder()
+	// fmt.Println("\n")
+
+	// errorsl.ShowFileOpenErrors()
+	// errorsl.AnotherFileOpenError()
+	// errorsl.ThirdErrorDNSLookup()
+	// errorsl.DemoFilePath()
+	// areas.Carea() //Demonstrates custom Errors
+	panicrecover.RunPanic()
 }

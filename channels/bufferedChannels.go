@@ -31,6 +31,6 @@ func RunBufferedMain() {
 	time.Sleep(1 * time.Second)
 	for val := range channel {
 		fmt.Println("valuee written by x routine is: ", val)
-		time.Sleep(2 * time.Second)
+		time.Sleep(1 * time.Second)
 	}
 }
