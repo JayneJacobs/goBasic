@@ -23,14 +23,18 @@ func f1(f1 *string, l *string) {
 	}
 	fmt.Printf("going backk to caller no errors %v, %v \n", *f1, &l)
 }
-func recover() {
-	f := "\nRestarted teh function"
-	f1(&f, &f)
+func recoverfunc() {
+	if rx := recover(); r != nil {
+		f := "\nRestarted the function"
+		fmt.Printf("Recovered from ", rx)
+		f1(&f, &f)
+	}
+
 }
 
 // RunPanic allows panic to print an error before exiting
 func RunPanic() {
-	defer recover()
+	defer recoverfunc()
 
 	f := "Jaynee"
 	// l := "Jim"
