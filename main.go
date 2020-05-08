@@ -1,7 +1,7 @@
 package main
 
 import (
-	"goBasic/panicrecover"
+	"goBasic/panicruntime"
 )
 
 func main() {
@@ -175,5 +175,8 @@ func main() {
 	// errorsl.ThirdErrorDNSLookup()
 	// errorsl.DemoFilePath()
 	// areas.Carea() //Demonstrates custom Errors
-	panicrecover.RunPanic()
+	// panicrecover.RunPanic()
+	// panicrecover.RunDemonoRec()
+	// panicrecover.RunDemoRec()
+	panicruntime.CallMain()
 }

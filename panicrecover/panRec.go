@@ -24,7 +24,7 @@ func f1(f1 *string, l *string) {
 	fmt.Printf("going backk to caller no errors %v, %v \n", *f1, &l)
 }
 func recoverfunc() {
-	if rx := recover(); r != nil {
+	if rx := recover(); rx != nil {
 		f := "\nRestarted the function"
 		fmt.Printf("Recovered from ", rx)
 		f1(&f, &f)
