@@ -10,6 +10,7 @@ import (
 func recoverfunc3() {
 	if rx := recover(); rx != nil {
 		fmt.Println("recovered from ", rx)
+		
 	}
 }
 
@@ -25,7 +26,7 @@ func b() {
 	panic("func y panicked") //there is a panick in y.
 }
 
-// RunDemonoRec demonstrates
+// RunDemoRec demonstrates
 func RunDemoRec() {
 	a()
 	fmt.Println("back to main")

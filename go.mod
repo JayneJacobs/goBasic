@@ -21,5 +21,6 @@ require (
 	golang.org/x/text v0.3.2 // indirect
 	golang.org/x/tools v0.0.0-20200430040329-4b814e061378 // indirect
 	golang.org/x/tools/gopls v0.4.0 // indirect
+	honnef.co/go/tools v0.0.1-2020.1.3
 	sourcegraph.com/sqs/goreturns v0.0.0-20181028201513-538ac6014518 // indirect
 )

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"goBasic/panicruntime"
+	"goBasic/closures"
 )
 
 func main() {
@@ -178,5 +178,11 @@ func main() {
 	// panicrecover.RunPanic()
 	// panicrecover.RunDemonoRec()
 	// panicrecover.RunDemoRec()
-	panicruntime.CallMain()
+	// panicruntime.CallMain()
+	// firstclassfunctions.DemoFirstClassFunc()
+	// firstclassfunctions.DemoUserDefinedFunctionType()
+	// functionhigherorder.DemoHiOrderFunc()
+	// functionreturnedfromfunction.DemoHiOrderFunc()
+	// closures.DemoClosures()
+	closures.DemoClosureinCalledAnonFunct()
 }

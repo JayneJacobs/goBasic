@@ -69,7 +69,9 @@
 			"--debug=localhost:6060", // to investigate memory usage, see profiles
 		]
 	},
-	"go.autocompleteUnimportedPackages": true
+	"go.autocompleteUnimportedPackages": true,
+	"go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+	"go.useCodeSnippetsOnFunctionSuggest": true
 	}
 
 }

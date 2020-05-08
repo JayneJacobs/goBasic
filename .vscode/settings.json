@@ -6,5 +6,8 @@
     "typescript.preferences.renameShorthandProperties": false,
     "typescript.suggestionActions.enabled": false,
     "typescript.suggest.autoImports": false,
-    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+    "go.autocompleteUnimportedPackages": true,
+    "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+    "editor.suggest.shareSuggestSelections": true
 }
